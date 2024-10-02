@@ -6,6 +6,28 @@
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
+a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul li{
+    border: 1px solid green;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    background-color: green;
+}
+ul li ul{
+    display: none;
+}
 /* header start  */
 header{
     width: ;
@@ -32,3 +54,6 @@ header .university {
     height: 73px;
     text-align: center;
 }
+/* header end  */
+
+/* navbar start here  */
