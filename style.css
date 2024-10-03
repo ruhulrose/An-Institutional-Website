@@ -3,57 +3,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
     background-color: rgb(255, 255, 255);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    text-decoration: none;
-    background-color: green;
-    color: white;
-
+body{
+    background-color: rgb(230, 241, 226);
+    width: 180rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgb(164, 244, 175) -0.1rem 0rem 0.1rem rgb(164, 244, 175);
 }
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-ul li{
-    border: 1px solid green;
-    margin: 5px;
-    padding: 5px;
-    list-style: none;
-    background-color: green;
-}
-ul li ul{
-    display: none;
-}
-/* header start  */
-header{
-    width: ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 20px;
-    flex-wrap: wrap;
-    flex;
-}
-header .logo img{
-    width: 200px;
-    height: 200px;
-    border-radius: 39%;
-    margin: 0 20px;
-}
-header .name{
-    font-size: 2rem;
-    text-align: center;
-}
+    /* header start  */
+    header{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 20px;
+        flex-wrap: wrap;
+        
+    }
+    header .logo img{
+        width: 200px;
+        height: 200px;
+        border-radius: 39%;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    header .name{
+        font-size: 3rem;
+        text-align: center;
+    }
 header .university {
-    width: 378px;
+    
     font-size: 1.5rem;
-    height: 73px;
+    border-radius: 47%;
+    height: 111px;
+    width: 371px;
+    border: 2px solid;
     text-align: center;
+    line-height: 50px;
+    background-color: yellow;
+    font-weight: bolder;
 }
 /* header end  */
 
 /* navbar start here  */
+.startnav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    z-index: 5;
+}
+.startnav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.startnav ul li{
+    border: 1px solid green;
+    margin: 5px;
+    width: 170px;
+    height: 60px;
+    background-color: green;
+    line-height: 50px;
+}
+.startnav ul li a{
+    color: white;
+    font-size: 1.5rem;
+}
+.startnav ul li ul{
+    display: none;
+}
+.startnav ul li:hover{
+    background-color: rgb(43, 90, 43);
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+.startnav ul li:hover> ul{
+    display: block;
+}
